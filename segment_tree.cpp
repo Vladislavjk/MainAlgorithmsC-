@@ -13,7 +13,7 @@ void buildTree(vector<int> &tree, const vector<int> &data, int v, int l, int r) 
 }
 
 int rsq(const vector<int> &tree, int v, int tl, int tr, int l, int r) {
-    if(tl > r || tr < l) return 0; // выход из рекурсии
+    if(tl > r || tr < l) return 0;
 
     if(tl >= l && tr <= r) {
         return tree[v];
