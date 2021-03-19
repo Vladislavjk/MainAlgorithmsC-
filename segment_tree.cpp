@@ -13,9 +13,9 @@ void buildTree(vector<int> &tree, const vector<int> &data, int v, int l, int r) 
 }
 
 int rsq(const vector<int> &tree, int v, int tl, int tr, int l, int r) {
-    if(tl > r || tr < l) return 0;
+    if(tl > r || tr < l) return 0; // выход из рекурсии
 
-    if(tl >= l && tr <= r) {  // выход из рекурсии(отрезок полностью входит в запрос)
+    if(tl >= l && tr <= r) {  //отрезок полностью входит в запрос
         return tree[v];
     }
 
