@@ -16,3 +16,4 @@ int my_lower_bound(vector<int> &a, int key) {
 	return r;
 }
 
+// cout << (my_lower_bound(v, key) != v.size() && key == v[my_lower_bound(v, key)]) << ' ' << my_lower_bound(v, key) << ' ' << my_lower_bound(v, key + 1) << endl;
